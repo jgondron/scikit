@@ -8,3 +8,7 @@ RUN apt-get update; \
       python-tk
 RUN pip install --upgrade pip
 RUN pip install -U scikit-learn matplotlib
+RUN pip install -U scikit-image
+
+RUN apt-get install -y less
+#RUN pip install querycsv sqlite
