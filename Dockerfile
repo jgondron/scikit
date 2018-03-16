@@ -11,4 +11,11 @@ RUN pip install -U scikit-learn matplotlib
 RUN pip install -U scikit-image
 
 RUN apt-get install -y less
-#RUN pip install querycsv sqlite
+
+# Mxnet
+RUN apt-get install -y \
+    python3-pip
+RUN pip3 install --upgrade pip
+RUN pip3 install sockeye --no-deps
+RUN pip install mxnet
+RUN pip install pyyaml

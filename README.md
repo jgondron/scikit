@@ -1,4 +1,4 @@
-Docker based setup for http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
+Docker based setup for scikit http://scikit-learn.org/stable/index.html and mxnet https://mxnet.apache.org/
 
 # Windows
 1. Install docker: https://docs.docker.com/docker-for-windows/install/
