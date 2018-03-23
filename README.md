@@ -15,3 +15,13 @@ Docker based setup for scikit http://scikit-learn.org/stable/index.html and mxne
 1. Run the example plotter: ```docker run -v $PWD:/mnt/scikit --rm -i -t scikit python /mnt/scikit/plot_classifier_comparison.py```
 1. Check the output: ```output\plot_classifier_comparison.png```
 1. Run a my_script.py in a different directory: ```docker run -v /path/to/script:/mnt/scikit --rm -i -t scikit python /mnt/scikit/my_script.py```
+
+# Notes
+Since there is no window manager, you will likely need to modify your script to render figures to an image file, ex:
+
+```
+import matplotlib
+matplotlib.use('Agg')
+# Do things
+figure.savefig('/mnt/scikit/plot_classifier_comparison.png')
+```
