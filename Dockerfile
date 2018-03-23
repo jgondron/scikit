@@ -9,6 +9,8 @@ RUN apt-get update; \
 RUN pip install --upgrade pip
 RUN pip install -U scikit-learn matplotlib
 RUN pip install -U scikit-image
+RUN python -m pip install pydotplus
+RUN apt-get install -y graphviz
 
 RUN apt-get install -y less curl wget gzip
 
